@@ -1,0 +1,2242 @@
+3	2
+//Probe file
+//Minor revision number
+1
+//ProbeName
+%N	Name    
+//Probe type, number of sensors
+1	 446
+//Position of fiducials X+, Y+, Y- on the subject
+%F	9.000000E-002	0.000000E+000	0.000000E+000
+%F	6.000000E-003	7.000000E-002	0.000000E+000
+%F	-6.000000E-003	-7.000000E-002	0.000000E+000
+//Sensor type
+%S	400
+//Sensor name and data for sensor #   1
+%N	LA01
+1.005664E-001	1.986926E-003	4.291793E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #   2
+%N	LA02
+1.005266E-001	8.303178E-004	5.159829E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #   3
+%N	LA03
+9.974670E-002	6.032735E-004	6.236622E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #   4
+%N	LA04
+9.786798E-002	1.863940E-004	7.154954E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #   5
+%N	LA05
+9.535379E-002	7.322166E-004	7.994154E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #   6
+%N	LA06
+9.097813E-002	5.624018E-004	8.968819E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #   7
+%N	LA07
+8.654222E-002	6.323578E-004	9.641889E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #   8
+%N	LA08
+7.981485E-002	-7.708052E-005	1.035860E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #   9
+%N	LA09
+7.281518E-002	-5.734676E-004	1.094964E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  10
+%N	LA10
+6.534930E-002	-1.843856E-004	1.150144E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  11
+%N	LA11
+5.790221E-002	-3.112834E-004	1.196833E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  12
+%N	LA12
+4.929057E-002	-1.640870E-003	1.244986E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  13
+%N	LA13
+4.023288E-002	-2.347084E-003	1.290778E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  14
+%N	LA14
+3.200035E-002	-2.670025E-003	1.332533E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  15
+%N	LA15
+2.367948E-002	-2.858573E-003	1.365930E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  16
+%N	LA16
+1.550701E-002	-3.698859E-003	1.393158E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  17
+%N	LA17
+6.781875E-003	-3.842740E-003	1.413300E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  18
+%N	LA18
+-3.405491E-003	-4.212380E-003	1.422356E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  19
+%N	LA19
+-1.251912E-002	-4.359755E-003	1.421204E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  20
+%N	LA20
+-2.103189E-002	-5.482335E-003	1.408742E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  21
+%N	LA21
+-3.014350E-002	-4.356189E-003	1.385060E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  22
+%N	LA22
+-3.798868E-002	-5.808517E-003	1.360311E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  23
+%N	LA23
+-4.439020E-002	-5.684464E-003	1.331215E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  24
+%N	LA24
+-5.075049E-002	-6.485400E-003	1.287974E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  25
+%N	LA25
+-5.544468E-002	-6.874631E-003	1.253000E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  26
+%N	LA26
+-6.057516E-002	-6.567908E-003	1.210780E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  27
+%N	LA27
+-6.600720E-002	-6.104530E-003	1.159377E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  28
+%N	LA28
+-7.086672E-002	-6.078157E-003	1.103597E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  29
+%N	LA29
+-7.615655E-002	-6.165530E-003	1.037024E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  30
+%N	LA30
+-8.203362E-002	-5.812623E-003	9.494605E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  31
+%N	LA31
+-8.722193E-002	-6.244244E-003	8.598745E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  32
+%N	LA32
+-9.151272E-002	-3.647506E-003	7.598082E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  33
+%N	LA33
+-9.457055E-002	-2.963124E-003	6.593631E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  34
+%N	LA34
+-9.720365E-002	-3.463191E-003	5.472085E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  35
+%N	LA35
+-9.902593E-002	-2.909484E-003	4.234524E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  36
+%N	LB01
+9.964160E-002	1.442257E-002	5.436146E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  37
+%N	LB02
+9.499190E-002	1.355877E-002	7.770565E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  38
+%N	LB03
+8.730748E-002	1.329343E-002	9.343385E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  39
+%N	LB04
+7.509690E-002	1.192093E-002	1.061230E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  40
+%N	LB05
+6.132945E-002	1.060021E-002	1.170170E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  41
+%N	LB06
+4.466088E-002	1.089451E-002	1.263827E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  42
+%N	LB07
+2.787727E-002	1.037824E-002	1.340719E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  43
+%N	LB08
+1.090802E-002	9.842970E-003	1.391828E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  44
+%N	LB09
+-8.909067E-003	8.175333E-003	1.414715E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  45
+%N	LB10
+-2.670210E-002	6.717555E-003	1.391014E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  46
+%N	LB11
+-4.134549E-002	7.096869E-003	1.337074E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  47
+%N	LB12
+-5.364067E-002	5.575643E-003	1.257843E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  48
+%N	LB13
+-6.222507E-002	6.014313E-003	1.183382E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  49
+%N	LB14
+-7.382501E-002	6.286246E-003	1.055300E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  50
+%N	LB15
+-8.494111E-002	8.097688E-003	8.840851E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  51
+%N	LB16
+-9.308843E-002	6.883315E-003	6.907205E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  52
+%N	LB17
+-9.759708E-002	8.183279E-003	4.547321E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  53
+%N	LC01
+9.660997E-002	2.503660E-002	5.316390E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  54
+%N	LC02
+9.296603E-002	2.454419E-002	7.336795E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  55
+%N	LC03
+8.547621E-002	2.271072E-002	9.025535E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  56
+%N	LC04
+7.343744E-002	2.210355E-002	1.043559E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  57
+%N	LC05
+5.882810E-002	2.156641E-002	1.155619E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  58
+%N	LC06
+4.164497E-002	2.109229E-002	1.253201E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  59
+%N	LC07
+2.483937E-002	2.070198E-002	1.326044E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  60
+%N	LC08
+8.151515E-003	2.054542E-002	1.374630E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  61
+%N	LC09
+-9.480422E-003	1.846907E-002	1.395680E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  62
+%N	LC10
+-2.503730E-002	1.714253E-002	1.375624E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  63
+%N	LC11
+-4.032128E-002	1.615338E-002	1.328179E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  64
+%N	LC12
+-5.340944E-002	1.487515E-002	1.244644E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  65
+%N	LC13
+-6.291493E-002	1.579318E-002	1.158246E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  66
+%N	LC14
+-7.279960E-002	1.562020E-002	1.043756E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  67
+%N	LC15
+-8.371428E-002	1.817162E-002	8.700872E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  68
+%N	LC16
+-9.120757E-002	1.926918E-002	6.727538E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  69
+%N	LC17
+-9.651222E-002	2.205218E-002	4.508619E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  70
+%N	LD01
+9.387010E-002	3.420558E-002	4.719255E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  71
+%N	LD02
+9.233876E-002	3.545971E-002	5.644445E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  72
+%N	LD03
+9.076578E-002	3.455832E-002	6.593111E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  73
+%N	LD04
+8.751355E-002	3.443102E-002	7.524858E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  74
+%N	LD05
+8.362491E-002	3.360347E-002	8.444035E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  75
+%N	LD06
+7.853584E-002	3.334700E-002	9.135196E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  76
+%N	LD07
+7.288620E-002	3.210461E-002	9.862262E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  77
+%N	LD08
+6.660861E-002	3.156590E-002	1.046878E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  78
+%N	LD09
+6.029136E-002	3.079287E-002	1.102628E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  79
+%N	LD10
+5.405094E-002	3.233880E-002	1.137410E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  80
+%N	LD11
+4.686101E-002	3.098135E-002	1.187129E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  81
+%N	LD12
+3.827343E-002	2.986321E-002	1.235807E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  82
+%N	LD13
+3.061897E-002	3.039432E-002	1.266772E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  83
+%N	LD14
+2.338188E-002	2.908607E-002	1.300882E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  84
+%N	LD15
+1.440252E-002	2.975157E-002	1.324243E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  85
+%N	LD16
+6.865828E-003	2.903153E-002	1.348176E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  86
+%N	LD17
+-2.469907E-004	2.829414E-002	1.361926E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  87
+%N	LD18
+-1.008320E-002	2.716744E-002	1.369993E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  88
+%N	LD19
+-1.661187E-002	2.782815E-002	1.362143E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  89
+%N	LD20
+-2.602208E-002	2.642963E-002	1.350041E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  90
+%N	LD21
+-3.386838E-002	2.597995E-002	1.327853E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  91
+%N	LD22
+-4.068064E-002	2.502012E-002	1.300582E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  92
+%N	LD23
+-4.601750E-002	2.400919E-002	1.278784E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  93
+%N	LD24
+-5.298378E-002	2.347660E-002	1.224636E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  94
+%N	LD25
+-5.825367E-002	2.279749E-002	1.183236E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  95
+%N	LD26
+-6.351178E-002	2.411935E-002	1.124812E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  96
+%N	LD27
+-6.762393E-002	2.353146E-002	1.079844E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  97
+%N	LD28
+-7.257543E-002	2.587446E-002	1.002684E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  98
+%N	LD29
+-7.831444E-002	2.682264E-002	9.117105E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor #  99
+%N	LD30
+-8.237276E-002	2.771201E-002	8.266864E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 100
+%N	LD31
+-8.606940E-002	2.868197E-002	7.245559E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 101
+%N	LD32
+-8.847653E-002	2.911348E-002	6.285383E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 102
+%N	LD33
+-9.030574E-002	3.024006E-002	5.326697E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 103
+%N	LD34
+-9.197736E-002	3.149185E-002	4.078940E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 104
+%N	LE01
+8.785777E-002	4.306101E-002	4.339797E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 105
+%N	LE02
+8.729757E-002	4.286250E-002	5.413081E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 106
+%N	LE03
+8.544304E-002	4.285586E-002	6.322045E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 107
+%N	LE04
+8.270169E-002	4.235300E-002	7.219518E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 108
+%N	LE05
+7.862107E-002	4.252014E-002	8.072870E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 109
+%N	LE06
+7.420053E-002	4.093858E-002	8.848194E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 110
+%N	LE07
+6.919298E-002	4.073041E-002	9.471888E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 111
+%N	LE08
+6.290131E-002	3.940001E-002	1.018346E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 112
+%N	LE09
+5.671396E-002	3.992422E-002	1.064703E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 113
+%N	LE10
+5.063365E-002	4.049247E-002	1.103884E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 114
+%N	LE11
+4.449121E-002	3.877804E-002	1.150106E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 115
+%N	LE12
+3.653719E-002	3.772481E-002	1.199615E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 116
+%N	LE13
+2.878704E-002	3.754014E-002	1.234921E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 117
+%N	LE14
+2.235737E-002	3.810053E-002	1.257927E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 118
+%N	LE15
+1.437989E-002	3.738772E-002	1.290633E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 119
+%N	LE16
+7.529206E-003	3.741021E-002	1.305169E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 120
+%N	LE17
+-9.884868E-004	3.804851E-002	1.317888E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 121
+%N	LE18
+-8.953731E-003	3.737758E-002	1.326732E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 122
+%N	LE19
+-1.635003E-002	3.631260E-002	1.327798E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 123
+%N	LE20
+-2.427597E-002	3.585233E-002	1.314590E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 124
+%N	LE21
+-3.035494E-002	3.601889E-002	1.298057E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 125
+%N	LE22
+-3.810817E-002	3.484146E-002	1.272764E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 126
+%N	LE23
+-4.482335E-002	3.307455E-002	1.243483E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 127
+%N	LE24
+-5.043786E-002	3.416849E-002	1.198650E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 128
+%N	LE25
+-5.544892E-002	3.388610E-002	1.157808E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 129
+%N	LE26
+-6.023525E-002	3.540051E-002	1.097762E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 130
+%N	LE27
+-6.518141E-002	3.592788E-002	1.036422E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 131
+%N	LE28
+-6.952016E-002	3.658605E-002	9.688198E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 132
+%N	LE29
+-7.393932E-002	3.778444E-002	8.841316E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 133
+%N	LE30
+-7.844199E-002	3.829968E-002	7.974185E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 134
+%N	LE31
+-8.159865E-002	3.861214E-002	6.984511E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 135
+%N	LE32
+-8.353044E-002	3.907145E-002	6.143387E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 136
+%N	LE33
+-8.448139E-002	4.082126E-002	5.167103E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 137
+%N	LE34
+-8.607122E-002	4.130293E-002	4.043416E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 138
+%N	LF01
+7.982404E-002	5.094214E-002	5.323985E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 139
+%N	LF02
+7.475201E-002	5.102025E-002	7.006309E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 140
+%N	LF03
+6.790760E-002	4.846526E-002	8.723556E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 141
+%N	LF04
+5.795879E-002	4.786278E-002	9.769936E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 142
+%N	LF05
+4.249886E-002	4.855239E-002	1.076610E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 143
+%N	LF06
+3.014320E-002	4.617556E-002	1.166889E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 144
+%N	LF07
+1.629941E-002	4.783891E-002	1.213792E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 145
+%N	LF08
+8.328104E-004	4.807401E-002	1.253739E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 146
+%N	LF09
+-1.390396E-002	4.739480E-002	1.264409E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 147
+%N	LF10
+-2.878683E-002	4.630899E-002	1.241949E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 148
+%N	LF11
+-4.083604E-002	4.555518E-002	1.190177E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 149
+%N	LF12
+-5.163469E-002	4.600545E-002	1.100978E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 150
+%N	LF13
+-6.060676E-002	4.683825E-002	9.832169E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 151
+%N	LF14
+-6.711678E-002	4.880445E-002	8.415792E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 152
+%N	LF15
+-7.247867E-002	5.013592E-002	6.832348E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 153
+%N	LF16
+-7.664649E-002	4.988135E-002	5.168574E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 154
+%N	LG01
+6.979874E-002	5.814334E-002	5.347879E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 155
+%N	LG02
+6.558884E-002	5.785318E-002	6.891476E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 156
+%N	LG03
+5.849992E-002	5.617781E-002	8.485271E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 157
+%N	LG04
+4.910615E-002	5.507443E-002	9.624227E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 158
+%N	LG05
+3.739991E-002	5.465225E-002	1.045847E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 159
+%N	LG06
+2.466996E-002	5.491266E-002	1.114197E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 160
+%N	LG07
+1.125334E-002	5.506912E-002	1.173041E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 161
+%N	LG08
+-1.301269E-003	5.546924E-002	1.193431E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 162
+%N	LG09
+-1.574815E-002	5.481852E-002	1.203885E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 163
+%N	LG10
+-2.856575E-002	5.441680E-002	1.171015E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 164
+%N	LG11
+-3.906771E-002	5.387180E-002	1.119363E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 165
+%N	LG12
+-5.078562E-002	5.411965E-002	1.014249E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 166
+%N	LG13
+-5.820093E-002	5.449168E-002	9.056514E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 167
+%N	LG14
+-6.322149E-002	5.647370E-002	7.461907E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 168
+%N	LG15
+-6.752070E-002	5.679351E-002	6.012733E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 169
+%N	LG16
+-7.033819E-002	5.699362E-002	4.007525E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 170
+%N	LH01
+5.842694E-002	6.372911E-002	4.866676E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 171
+%N	LH02
+5.770770E-002	6.344987E-002	6.288632E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 172
+%N	LH03
+5.364558E-002	6.232705E-002	7.642618E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 173
+%N	LH04
+4.619359E-002	6.112731E-002	8.899633E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 174
+%N	LH05
+3.461369E-002	6.141069E-002	9.779517E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 175
+%N	LH06
+2.351247E-002	6.142273E-002	1.051333E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 176
+%N	LH07
+1.206029E-002	6.243615E-002	1.091366E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 177
+%N	LH08
+-7.997687E-004	6.229179E-002	1.129673E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 178
+%N	LH09
+-1.403641E-002	6.272915E-002	1.120404E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 179
+%N	LH10
+-2.512788E-002	6.233818E-002	1.084706E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 180
+%N	LH11
+-3.716016E-002	6.071114E-002	1.040093E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 181
+%N	LH12
+-4.509740E-002	6.146267E-002	9.480095E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 182
+%N	LH13
+-5.259183E-002	6.185299E-002	8.296568E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 183
+%N	LH14
+-5.806438E-002	6.207657E-002	7.003328E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 184
+%N	LH15
+-5.958934E-002	6.360632E-002	5.415152E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 185
+%N	LH16
+-5.935630E-002	6.484068E-002	3.813101E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 186
+%N	LI01
+4.922292E-002	6.728240E-002	4.887633E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 187
+%N	LI02
+4.823183E-002	6.702175E-002	6.148008E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 188
+%N	LI03
+4.145827E-002	6.817691E-002	7.167694E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 189
+%N	LI04
+3.358447E-002	6.875653E-002	8.146055E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 190
+%N	LI05
+2.485349E-002	6.857139E-002	9.179921E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 191
+%N	LI06
+1.584902E-002	6.907295E-002	9.656427E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 192
+%N	LI07
+4.737761E-003	6.935767E-002	1.009050E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 193
+%N	LI08
+-7.067951E-003	6.883462E-002	1.034838E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 194
+%N	LI09
+-1.720007E-002	6.905016E-002	1.006195E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 195
+%N	LI10
+-2.809588E-002	6.828599E-002	9.600953E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 196
+%N	LI11
+-3.508477E-002	6.739359E-002	9.082790E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 197
+%N	LI12
+-4.204414E-002	6.758339E-002	7.973618E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 198
+%N	LI13
+-4.570530E-002	6.818795E-002	6.801207E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 199
+%N	LI14
+-4.848529E-002	6.893882E-002	5.417511E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 200
+%N	LI15
+-4.855548E-002	7.008990E-002	4.018471E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 201
+%N	LI16
+-4.822497E-002	7.054692E-002	2.514244E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 202
+%N	LJ01
+4.037429E-002	7.074094E-002	5.107853E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 203
+%N	LJ02
+3.213741E-002	7.133620E-002	7.317926E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 204
+%N	LJ03
+1.321352E-002	7.342621E-002	8.569669E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 205
+%N	LJ04
+-6.780891E-003	7.339707E-002	9.180314E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 206
+%N	LJ05
+-2.511994E-002	7.217242E-002	8.486945E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 207
+%N	LJ06
+-3.833170E-002	7.073833E-002	6.868682E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 208
+%N	LJ07
+-4.290478E-002	7.155905E-002	4.471675E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 209
+%N	LJ08
+-4.280593E-002	7.101252E-002	1.627819E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 210
+%N	LK01
+2.835211E-002	7.408272E-002	4.666139E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 211
+%N	LK02
+2.170161E-002	7.477654E-002	6.416831E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 212
+%N	LK03
+6.792026E-003	7.630139E-002	7.630510E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 213
+%N	LK04
+-9.044516E-003	7.599062E-002	8.022994E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 214
+%N	LK05
+-2.611156E-002	7.384631E-002	7.445261E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 215
+%N	LK06
+-3.390186E-002	7.383838E-002	5.312244E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 216
+%N	LK07
+-3.874486E-002	7.283482E-002	2.631340E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 217
+%N	LL01
+2.111162E-002	7.629835E-002	3.413609E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 218
+%N	LL02
+1.921258E-002	7.672302E-002	4.812712E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 219
+%N	LL03
+1.225662E-002	7.738134E-002	6.058392E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 220
+%N	LL04
+3.785984E-003	7.756434E-002	6.709776E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 221
+%N	LL05
+-7.732177E-003	7.735163E-002	6.936882E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 222
+%N	LL06
+-1.678085E-002	7.697669E-002	6.369172E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 223
+%N	LL07
+-2.402042E-002	7.612312E-002	5.360325E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 224
+%N	LL08
+-2.993988E-002	7.508177E-002	3.622032E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 225
+%N	RA01
+1.003461E-001	-5.045945E-003	4.623328E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 226
+%N	RA02
+9.965792E-002	-6.466729E-003	5.477540E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 227
+%N	RA03
+9.894666E-002	-5.998026E-003	6.480191E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 228
+%N	RA04
+9.681888E-002	-6.128155E-003	7.356937E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 229
+%N	RA05
+9.381251E-002	-6.337982E-003	8.245161E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 230
+%N	RA06
+8.983891E-002	-6.937831E-003	9.023681E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 231
+%N	RA07
+8.429321E-002	-7.554775E-003	9.863581E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 232
+%N	RA08
+7.923416E-002	-8.451096E-003	1.040857E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 233
+%N	RA09
+7.191813E-002	-8.402585E-003	1.099154E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 234
+%N	RA10
+6.475032E-002	-8.853996E-003	1.151315E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 235
+%N	RA11
+5.829380E-002	-8.406633E-003	1.194502E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 236
+%N	RA12
+4.910138E-002	-9.799377E-003	1.242039E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 237
+%N	RA13
+4.062709E-002	-1.050299E-002	1.284103E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 238
+%N	RA14
+3.102667E-002	-1.057662E-002	1.330590E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 239
+%N	RA15
+2.168918E-002	-1.134162E-002	1.366360E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 240
+%N	RA16
+1.498148E-002	-1.109629E-002	1.390798E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 241
+%N	RA17
+4.795332E-003	-1.280455E-002	1.409876E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 242
+%N	RA18
+-3.407626E-003	-1.235982E-002	1.421060E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 243
+%N	RA19
+-1.211111E-002	-1.259940E-002	1.423905E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 244
+%N	RA20
+-1.886467E-002	-1.426546E-002	1.416086E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 245
+%N	RA21
+-3.042230E-002	-1.433909E-002	1.391677E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 246
+%N	RA22
+-3.822099E-002	-1.392243E-002	1.368081E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 247
+%N	RA23
+-4.454261E-002	-1.406570E-002	1.335985E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 248
+%N	RA24
+-5.198194E-002	-1.326831E-002	1.294276E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 249
+%N	RA25
+-5.695707E-002	-1.554340E-002	1.247529E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 250
+%N	RA26
+-6.255199E-002	-1.520591E-002	1.196586E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 251
+%N	RA27
+-6.684643E-002	-1.566994E-002	1.154593E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 252
+%N	RA28
+-7.145116E-002	-1.558931E-002	1.097894E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 253
+%N	RA29
+-7.702982E-002	-1.585761E-002	1.026100E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 254
+%N	RA30
+-8.243457E-002	-1.578841E-002	9.467025E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 255
+%N	RA31
+-8.782273E-002	-1.613289E-002	8.429729E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 256
+%N	RA32
+-9.201756E-002	-1.607223E-002	7.430594E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 257
+%N	RA33
+-9.449169E-002	-1.580258E-002	6.510028E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 258
+%N	RA34
+-9.742208E-002	-1.347550E-002	5.406505E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 259
+%N	RA35
+-9.921872E-002	-1.218099E-002	4.220920E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 260
+%N	RB01
+9.798504E-002	-1.522211E-002	5.529713E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 261
+%N	RB02
+9.429959E-002	-1.738811E-002	7.394618E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 262
+%N	RB03
+8.587867E-002	-1.733111E-002	9.247023E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 263
+%N	RB04
+7.378488E-002	-1.730068E-002	1.054581E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 264
+%N	RB05
+5.771980E-002	-1.861830E-002	1.168259E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 265
+%N	RB06
+4.225284E-002	-2.041780E-002	1.250379E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 266
+%N	RB07
+2.543401E-002	-2.248867E-002	1.319588E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 267
+%N	RB08
+9.037308E-003	-2.349599E-002	1.372857E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 268
+%N	RB09
+-8.349227E-003	-2.480033E-002	1.395469E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 269
+%N	RB10
+-2.621726E-002	-2.604551E-002	1.381020E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 270
+%N	RB11
+-4.290384E-002	-2.625160E-002	1.326267E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 271
+%N	RB12
+-5.510009E-002	-2.687597E-002	1.247183E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 272
+%N	RB13
+-6.674765E-002	-2.542707E-002	1.143971E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 273
+%N	RB14
+-7.628840E-002	-2.562817E-002	1.018538E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 274
+%N	RB15
+-8.565146E-002	-2.637939E-002	8.562292E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 275
+%N	RB16
+-9.278590E-002	-2.674777E-002	6.580704E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 276
+%N	RB17
+-9.744705E-002	-2.562178E-002	4.548397E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 277
+%N	RC01
+9.453222E-002	-2.781852E-002	5.332788E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 278
+%N	RC02
+9.010413E-002	-2.974821E-002	7.269649E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 279
+%N	RC03
+8.093469E-002	-2.985407E-002	9.047170E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 280
+%N	RC04
+6.977567E-002	-2.800084E-002	1.038320E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 281
+%N	RC05
+5.561115E-002	-2.977792E-002	1.136275E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 282
+%N	RC06
+3.995854E-002	-3.085133E-002	1.220322E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 283
+%N	RC07
+2.297662E-002	-3.167709E-002	1.296739E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 284
+%N	RC08
+7.184677E-003	-3.359433E-002	1.342620E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 285
+%N	RC09
+-9.654593E-003	-3.499761E-002	1.367029E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 286
+%N	RC10
+-2.431777E-002	-3.440334E-002	1.362633E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 287
+%N	RC11
+-4.069815E-002	-3.660230E-002	1.301041E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 288
+%N	RC12
+-5.306411E-002	-3.680159E-002	1.230790E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 289
+%N	RC13
+-6.547442E-002	-3.721478E-002	1.114242E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 290
+%N	RC14
+-7.403231E-002	-3.768320E-002	9.942176E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 291
+%N	RC15
+-8.332233E-002	-3.732297E-002	8.378788E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 292
+%N	RC16
+-8.962840E-002	-3.727820E-002	6.543689E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 293
+%N	RC17
+-9.522085E-002	-3.613444E-002	4.235057E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 294
+%N	RD01
+9.026460E-002	-3.732317E-002	4.710244E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 295
+%N	RD02
+8.903744E-002	-3.800862E-002	5.596622E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 296
+%N	RD03
+8.697148E-002	-3.856926E-002	6.515630E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 297
+%N	RD04
+8.424254E-002	-3.845832E-002	7.411076E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 298
+%N	RD05
+7.965545E-002	-3.877112E-002	8.296449E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 299
+%N	RD06
+7.431854E-002	-3.883404E-002	9.024027E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 300
+%N	RD07
+6.815846E-002	-3.860356E-002	9.707412E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 301
+%N	RD08
+6.377963E-002	-3.855720E-002	1.014529E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 302
+%N	RD09
+5.669590E-002	-3.830501E-002	1.074561E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 303
+%N	RD10
+5.083608E-002	-3.794025E-002	1.120927E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 304
+%N	RD11
+4.164183E-002	-3.825929E-002	1.170447E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 305
+%N	RD12
+3.514565E-002	-3.795561E-002	1.205219E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 306
+%N	RD13
+2.629067E-002	-3.905657E-002	1.238891E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 307
+%N	RD14
+1.882423E-002	-3.989816E-002	1.269511E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 308
+%N	RD15
+1.077853E-002	-4.064211E-002	1.298815E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 309
+%N	RD16
+4.152731E-003	-4.129619E-002	1.319244E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 310
+%N	RD17
+-4.223698E-003	-4.194327E-002	1.327886E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 311
+%N	RD18
+-1.228308E-002	-4.370815E-002	1.327501E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 312
+%N	RD19
+-1.934416E-002	-4.334055E-002	1.331512E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 313
+%N	RD20
+-2.744255E-002	-4.396519E-002	1.317278E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 314
+%N	RD21
+-3.329100E-002	-4.534014E-002	1.295477E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 315
+%N	RD22
+-4.111519E-002	-4.590690E-002	1.263367E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 316
+%N	RD23
+-4.857549E-002	-4.579695E-002	1.222958E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 317
+%N	RD24
+-5.488297E-002	-4.607177E-002	1.172781E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 318
+%N	RD25
+-5.988066E-002	-4.712263E-002	1.123023E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 319
+%N	RD26
+-6.375162E-002	-4.649197E-002	1.083949E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 320
+%N	RD27
+-6.873113E-002	-4.694594E-002	1.011245E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 321
+%N	RD28
+-7.308322E-002	-4.690480E-002	9.400268E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 322
+%N	RD29
+-7.774189E-002	-4.668214E-002	8.607835E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 323
+%N	RD30
+-8.049304E-002	-4.826145E-002	7.705079E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 324
+%N	RD31
+-8.440248E-002	-4.774847E-002	6.791234E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 325
+%N	RD32
+-8.543785E-002	-4.858059E-002	5.800556E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 326
+%N	RD33
+-8.778227E-002	-4.837971E-002	4.732191E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 327
+%N	RD34
+-8.919465E-002	-4.805274E-002	3.705669E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 328
+%N	RE01
+8.464081E-002	-4.497585E-002	4.150987E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 329
+%N	RE02
+8.399448E-002	-4.554913E-002	5.231270E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 330
+%N	RE03
+8.212770E-002	-4.612530E-002	6.027638E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 331
+%N	RE04
+7.915280E-002	-4.671479E-002	6.889862E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 332
+%N	RE05
+7.609338E-002	-4.623553E-002	7.660013E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 333
+%N	RE06
+7.130248E-002	-4.628708E-002	8.453423E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 334
+%N	RE07
+6.610070E-002	-4.609191E-002	9.203943E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 335
+%N	RE08
+6.056950E-002	-4.583018E-002	9.773062E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 336
+%N	RE09
+5.471486E-002	-4.623889E-002	1.024073E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 337
+%N	RE10
+4.774636E-002	-4.644734E-002	1.070145E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 338
+%N	RE11
+3.967983E-002	-4.633540E-002	1.120767E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 339
+%N	RE12
+3.388618E-002	-4.532627E-002	1.159723E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 340
+%N	RE13
+2.454781E-002	-4.666839E-002	1.199508E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 341
+%N	RE14
+1.892836E-002	-4.597309E-002	1.233841E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 342
+%N	RE15
+1.110535E-002	-4.829274E-002	1.251184E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 343
+%N	RE16
+3.853196E-003	-5.021566E-002	1.261799E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 344
+%N	RE17
+-4.922780E-003	-5.059675E-002	1.281159E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 345
+%N	RE18
+-1.189933E-002	-5.116237E-002	1.284162E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 346
+%N	RE19
+-2.146218E-002	-5.177431E-002	1.279591E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 347
+%N	RE20
+-2.743044E-002	-5.310882E-002	1.263998E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 348
+%N	RE21
+-3.459268E-002	-5.394352E-002	1.238892E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 349
+%N	RE22
+-4.209184E-002	-5.365987E-002	1.204590E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 350
+%N	RE23
+-4.766258E-002	-5.415735E-002	1.170060E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 351
+%N	RE24
+-5.341621E-002	-5.398752E-002	1.129223E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 352
+%N	RE25
+-5.898221E-002	-5.311963E-002	1.092364E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 353
+%N	RE26
+-6.204865E-002	-5.443770E-002	1.033471E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 354
+%N	RE27
+-6.758386E-002	-5.418476E-002	9.669418E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 355
+%N	RE28
+-7.134727E-002	-5.493143E-002	8.826629E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 356
+%N	RE29
+-7.581508E-002	-5.510915E-002	7.854625E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 357
+%N	RE30
+-7.833804E-002	-5.570813E-002	7.044088E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 358
+%N	RE31
+-8.145774E-002	-5.508161E-002	6.027863E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 359
+%N	RE32
+-8.266202E-002	-5.531635E-002	5.229499E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 360
+%N	RE33
+-8.400602E-002	-5.503793E-002	4.408405E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 361
+%N	RE34
+-8.568613E-002	-5.395295E-002	3.418800E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 362
+%N	RF01
+7.483229E-002	-5.418912E-002	5.052785E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 363
+%N	RF02
+7.100166E-002	-5.434291E-002	6.748392E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 364
+%N	RF03
+6.328327E-002	-5.412908E-002	8.260748E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 365
+%N	RF04
+5.295668E-002	-5.472920E-002	9.394458E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 366
+%N	RF05
+4.107596E-002	-5.360660E-002	1.040948E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 367
+%N	RF06
+2.889310E-002	-5.455333E-002	1.111710E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 368
+%N	RF07
+1.300680E-002	-5.686702E-002	1.173568E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 369
+%N	RF08
+-1.292129E-003	-5.945334E-002	1.203423E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 370
+%N	RF09
+-1.545360E-002	-6.232718E-002	1.195760E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 371
+%N	RF10
+-3.091896E-002	-6.232250E-002	1.174182E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 372
+%N	RF11
+-4.287675E-002	-6.300615E-002	1.113254E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 373
+%N	RF12
+-5.429746E-002	-6.224366E-002	1.031989E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 374
+%N	RF13
+-6.244187E-002	-6.226225E-002	9.334808E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 375
+%N	RF14
+-6.885696E-002	-6.247077E-002	7.930766E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 376
+%N	RF15
+-7.465757E-002	-6.265454E-002	6.148232E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 377
+%N	RF16
+-7.765335E-002	-6.173656E-002	4.188558E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 378
+%N	RG01
+6.330223E-002	-6.151994E-002	4.782464E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 379
+%N	RG02
+5.962575E-002	-6.206921E-002	6.486883E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 380
+%N	RG03
+5.237114E-002	-6.254663E-002	7.877519E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 381
+%N	RG04
+4.484086E-002	-6.215062E-002	8.969080E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 382
+%N	RG05
+3.486093E-002	-6.232590E-002	9.834103E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 383
+%N	RG06
+2.226024E-002	-6.398101E-002	1.049714E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 384
+%N	RG07
+8.082456E-003	-6.580984E-002	1.102431E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 385
+%N	RG08
+-5.113071E-003	-6.703116E-002	1.135257E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 386
+%N	RG09
+-1.955683E-002	-6.906970E-002	1.119962E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 387
+%N	RG10
+-3.252050E-002	-6.960138E-002	1.072868E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 388
+%N	RG11
+-4.454351E-002	-6.948880E-002	9.992969E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 389
+%N	RG12
+-5.010192E-002	-7.044343E-002	9.312651E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 390
+%N	RG13
+-5.717583E-002	-7.055770E-002	8.079722E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 391
+%N	RG14
+-6.365463E-002	-6.967187E-002	6.588192E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 392
+%N	RG15
+-6.736675E-002	-6.898556E-002	4.988871E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 393
+%N	RG16
+-6.744645E-002	-6.920293E-002	3.285761E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 394
+%N	RH01
+5.229413E-002	-6.610531E-002	4.976411E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 395
+%N	RH02
+5.029606E-002	-6.672470E-002	6.340632E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 396
+%N	RH03
+4.344119E-002	-6.806547E-002	7.507625E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 397
+%N	RH04
+3.463406E-002	-6.852246E-002	8.627442E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 398
+%N	RH05
+2.448831E-002	-7.033077E-002	9.326024E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 399
+%N	RH06
+1.249071E-002	-7.117857E-002	1.003018E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 400
+%N	RH07
+-1.326771E-005	-7.285853E-002	1.037069E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 401
+%N	RH08
+-1.304903E-002	-7.433123E-002	1.035585E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 402
+%N	RH09
+-2.507458E-002	-7.471905E-002	1.010230E-001
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 403
+%N	RH10
+-3.462656E-002	-7.422540E-002	9.718262E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 404
+%N	RH11
+-4.242705E-002	-7.454412E-002	8.915303E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 405
+%N	RH12
+-4.893730E-002	-7.444502E-002	7.778798E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 406
+%N	RH13
+-5.267651E-002	-7.460163E-002	6.541963E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 407
+%N	RH14
+-5.503511E-002	-7.495470E-002	5.092107E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 408
+%N	RH15
+-5.782985E-002	-7.434582E-002	3.444300E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 409
+%N	RH16
+-5.693594E-002	-7.470793E-002	2.234547E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 410
+%N	RI01
+4.389436E-002	-6.974335E-002	5.097162E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 411
+%N	RI02
+4.117123E-002	-7.077047E-002	6.195040E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 412
+%N	RI03
+3.478996E-002	-7.245939E-002	7.090133E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 413
+%N	RI04
+2.667133E-002	-7.391382E-002	8.010084E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 414
+%N	RI05
+1.761143E-002	-7.482412E-002	8.904389E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 415
+%N	RI06
+7.442131E-003	-7.601873E-002	9.366393E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 416
+%N	RI07
+-4.291610E-003	-7.776972E-002	9.556276E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 417
+%N	RI08
+-1.726683E-002	-7.825637E-002	9.486177E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 418
+%N	RI09
+-2.684924E-002	-7.842058E-002	9.041923E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 419
+%N	RI10
+-3.497530E-002	-7.764049E-002	8.588249E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 420
+%N	RI11
+-4.144470E-002	-7.722665E-002	7.892989E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 421
+%N	RI12
+-4.572560E-002	-7.705387E-002	6.536973E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 422
+%N	RI13
+-4.867810E-002	-7.719661E-002	5.210316E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 423
+%N	RI14
+-4.994693E-002	-7.738150E-002	3.567802E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 424
+%N	RI15
+-5.282594E-002	-7.562397E-002	2.126472E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 425
+%N	RJ01
+3.578870E-002	-7.282905E-002	4.930272E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 426
+%N	RJ02
+2.171132E-002	-7.703657E-002	7.023493E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 427
+%N	RJ03
+3.257635E-003	-7.996962E-002	7.995104E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 428
+%N	RJ04
+-1.712038E-002	-8.104574E-002	8.229241E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 429
+%N	RJ05
+-3.206333E-002	-7.960266E-002	7.521813E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 430
+%N	RJ06
+-4.134643E-002	-7.891485E-002	5.388649E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 431
+%N	RJ07
+-4.455416E-002	-7.756200E-002	2.592206E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 432
+%N	RK01
+2.601993E-002	-7.587489E-002	4.568969E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 433
+%N	RK02
+1.480550E-002	-7.940186E-002	6.088709E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 434
+%N	RK03
+-1.570587E-003	-8.174485E-002	7.057659E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 435
+%N	RK04
+-1.856069E-002	-8.193413E-002	7.132405E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 436
+%N	RK05
+-3.057675E-002	-8.134883E-002	6.030502E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 437
+%N	RK06
+-3.809224E-002	-7.834251E-002	3.432697E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 438
+%N	RK07
+-4.227753E-002	-7.441255E-002	1.148980E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 439
+%N	RL01
+1.662805E-002	-7.726610E-002	3.201448E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 440
+%N	RL02
+1.195840E-002	-7.936534E-002	4.329364E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 441
+%N	RL03
+3.172462E-003	-8.189486E-002	5.386332E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 442
+%N	RL04
+-5.249748E-003	-8.319304E-002	5.887913E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 443
+%N	RL05
+-1.385315E-002	-8.376923E-002	5.879195E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 444
+%N	RL06
+-2.236875E-002	-8.334912E-002	5.269273E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 445
+%N	RL07
+-3.218282E-002	-7.973746E-002	3.837532E-002
+//Sensor type
+%S	400
+//Sensor name and data for sensor # 446
+%N	RL08
+-4.011188E-002	-7.638536E-002	1.949070E-002
