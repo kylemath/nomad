@@ -1,5 +1,4 @@
 ## NOMAD ##
-=====
 
 ![alt text](gui/nomad.jpg)
 
