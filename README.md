@@ -7,6 +7,9 @@
 
 This is software to select locations on an optical imaging helmet for sources and detectors, to create montage maps for setup, and to assign source and detector order using a graph colouring approach.
 
+nomad.m - v3.0 - Near-infrared Optode Montage Automated Designer 
+Dr. Kyle Mathewson, University of Alberta - Sept 27, 2019 - modified to work on matlab 2019
+
 nomad.m - v2.0 - Near-Near-infrared Optode Montage Automated Designer 
 Dr. Kyle Mathewson, University of Illinois - Feb 7, 2013
 
@@ -17,7 +20,7 @@ Formerly Montage_design_2012.m - Interactively design montages, place detectors,
 Modified from earlier Montage_design.m by Kyle Mathewson & Ed Maclin
 Based on Montage Design techniques from Kathy Low
 
-Copyright Dr. Kyle Mathewson, Beckman Instite, University of Illinois
+Copyright Dr. Kyle Mathewson, University of Alberta
 
 # Input 
 uses standard .elp files of the CNL helmets - load from the settings
