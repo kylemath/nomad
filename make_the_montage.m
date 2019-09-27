@@ -25,6 +25,9 @@ for i_mtg = 1:mtg(1).n_mtgs
     % display the schematic
     [ph plot_i plot_handle]=    helm_draw_sch;
     helm.plot_handle = plot_handle;
+    plot_handle
+    plot_handle(end-1)
+    plot_handle(end)
     subplot(1,2,1); title(['Place the ' num2str(mtg(i_mtg).n_dets) ' Detectors.'],'fontsize',12)
     
     %% initialized and reset everything
@@ -78,10 +81,10 @@ for i_mtg = 1:mtg(1).n_mtgs
                     mtg(i_mtg).det_xy(i_det,:) = helm.xy{jx}(jy,:);                             %det location in scatter
                     mtg(i_mtg).det_i(i_det) = helm.sensor_i{jx}(jy);                          %for each det, number in elp list
                     mtg(i_mtg).det_helm_loc(mtg(i_mtg).det_i(i_det)) = i_det;                   %For each help location, which number detector is there
-                    set(plot_i,'currentaxes',helm.plot_handle(1)) %update the scatterplot
+                    set(plot_i,'currentaxes',helm.plot_handle(end-1)) %update the scatterplot
                     scatter(mtg(i_mtg).det_xy(i_det,1),mtg(i_mtg).det_xy(i_det,2),helm.spot*2,[0 0 0])
                     scatter(mtg(i_mtg).det_xy(i_det,1),mtg(i_mtg).det_xy(i_det,2),helm.spot,[0 0 0],'filled')
-                    set(plot_i,'currentaxes',helm.plot_handle(2)) %update the schematic
+                    set(plot_i,'currentaxes',helm.plot_handle(end)) %update the schematic
                     set(ph{jx}(jy),'FaceColor',[0 0 0]); % set clicked patch to black on drawing
                     helm.clr{jx}(jy,:)=[0 0 0];    % record selected detector as black
                     if length(mtg(i_mtg).dets_left) == 1
@@ -157,13 +160,13 @@ for i_mtg = 1:mtg(1).n_mtgs
                
                 
                 %redraw and update the scatterplot
-                set(plot_i,'currentaxes',helm.plot_handle(1)) %update the scatterplot
+                set(plot_i,'currentaxes',helm.plot_handle(end-1)) %update the scatterplot
                 hold off
                 scatter(helm.sensor_xy(:,1),helm.sensor_xy(:,2),helm.spot,helm.sensor_clr,'filled'); axis off; hold on;
                 scatter(mtg(i_mtg).det_xy(:,1),mtg(i_mtg).det_xy(:,2),helm.spot,[0 0 0],'filled');
                 scatter(mtg(i_mtg).det_xy(:,1),mtg(i_mtg).det_xy(:,2),helm.spot*2,[0 0 0]);
                 %update the schematic
-                set(plot_i,'currentaxes',helm.plot_handle(2)) %update the schematic
+                set(plot_i,'currentaxes',helm.plot_handle(end)) %update the schematic
                 set(ph{jx}(jy),'FaceColor',helm.det_clr); % set clicked patch to gray
                 helm.clr{jx}(jy,:)=helm.det_clr;    % record selected detector as gray
                 if length(mtg(i_mtg).dets_left) == 1
@@ -254,7 +257,7 @@ for i_mtg = 1:mtg(1).n_mtgs
             [a kx] = max(row_max(:,1));
             ky = row_max(kx,2);
             if helm.clr{kx}(ky,1) == helm.clr{kx}(ky,2); %if the best left is a grey area
-                set(plot_i,'currentaxes',helm.plot_handle(2))
+                set(plot_i,'currentaxes',helm.plot_handle(end))
                 title(['No acceptable positions left for the ' num2str(length(mtg(i_mtg).srcs_left)) ' sources left, Restart',],'fontsize',15);
                 break;
             end
@@ -307,7 +310,7 @@ for i_mtg = 1:mtg(1).n_mtgs
                     end %all close dets
                           
                     % update the schematic
-                    set(plot_i,'currentaxes',helm.plot_handle(2))
+                    set(plot_i,'currentaxes',helm.plot_handle(end))
                     hold on
                     temp = helm.clr{jx}(jy,1);   % swith to make blue
                     helm.clr{jx}(jy,1) = helm.clr{jx}(jy,3);
@@ -321,7 +324,7 @@ for i_mtg = 1:mtg(1).n_mtgs
                     end
                     
                     %update scatterplot
-                    set(plot_i,'currentaxes',helm.plot_handle(1))
+                    set(plot_i,'currentaxes',helm.plot_handle(end-1))
                     scatter(mtg(i_mtg).src_xy(i_src,1),mtg(i_mtg).src_xy(i_src,2),helm.spot,[1 0 0],'filled')
                     scatter(mtg(i_mtg).src_xy(i_src,1),mtg(i_mtg).src_xy(i_src,2),helm.spot,[0 0 0])
                     %plot a line connecting the source to the detectors nearby
@@ -392,7 +395,7 @@ for i_mtg = 1:mtg(1).n_mtgs
 %                         end
 %                     end
 %                    %update the scatterplot
-%                     set(plot_i,'currentaxes',helm.plot_handle(1)) 
+%                     set(plot_i,'currentaxes',helm.plot_handle(end-1)) 
 %                     hold off
 %                     scatter(helm.sensor_xy(:,1),helm.sensor_xy(:,2),helm.spot,helm.sensor_clr,'filled'); axis off; hold on;
 %                     scatter(mtg(i_mtg).src_xy(:,1),mtg(i_mtg).src_xy(:,2),helm.spot,[0 0 0]);
@@ -407,7 +410,7 @@ for i_mtg = 1:mtg(1).n_mtgs
 %                         end
 %                     end
 %                     %update schematic
-%                     set(plot_i,'currentaxes',helm.plot_handle(2)) %update the schematic
+%                     set(plot_i,'currentaxes',helm.plot_handle(end)) %update the schematic
 %                     temp = helm.clr{jx}(jy,1);   % switch the source from blue back to red
 %                     helm.clr{jx}(jy,1) = helm.clr{jx}(jy,3);
 %                     helm.clr{jx}(jy,3) = temp;
@@ -466,7 +469,7 @@ for i_mtg = 1:mtg(1).n_mtgs
                     [a jx] = max(row_max(:,1));
                     jy = row_max(jx,2);
                     if helm.clr{jx}(jy,1) == helm.clr{jx}(jy,2); %if the best left is a grey area
-                        set(plot_i,'currentaxes',helm.plot_handle(2))
+                        set(plot_i,'currentaxes',helm.plot_handle(end))
                         title(['No acceptable positions left for the ' num2str(mtg(i_mtg).n_srcs-i_src+1) ' sources left, Restart'],'fontsize',15);
                         crowded_flag = 1;
                         break;
@@ -487,7 +490,7 @@ for i_mtg = 1:mtg(1).n_mtgs
                         end
                     end % i_det
                     % draw connecting schematic lines
-                    set(plot_i,'currentaxes',helm.plot_handle(2))
+                    set(plot_i,'currentaxes',helm.plot_handle(end))
                     hold on
                     temp = helm.clr{jx}(jy,1);   % swith to make blue
                     helm.clr{jx}(jy,1) = helm.clr{jx}(jy,3);
@@ -512,7 +515,7 @@ for i_mtg = 1:mtg(1).n_mtgs
                             end % row loop
                         end
                     end
-                    set(plot_i,'currentaxes',helm.plot_handle(1))
+                    set(plot_i,'currentaxes',helm.plot_handle(end-1))
                     scatter(mtg(i_mtg).src_xy(i_src,1),mtg(i_mtg).src_xy(i_src,2),helm.spot,[1 0 0],'filled')
                     scatter(mtg(i_mtg).src_xy(i_src,1),mtg(i_mtg).src_xy(i_src,2),helm.spot,[0 0 0])
                     for i_det=find(mtg(i_mtg).close_dets(i_src,:) == 1)
