@@ -32,7 +32,7 @@ if strcmp(mtg(mtg(1).current).schem_clr, 'CNL') == 1 || strcmp(mtg(mtg(1).curren
 elseif strcmp(mtg(mtg(1).current).schem_clr,'DOIL') == 1
     mtg(mtg(1).current).det_name = 'EFGHefghmnopijklabcdABCDxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';    % detector labels
 elseif strcmp(mtg(1).schem_clr,'APPLAB') == 1
-    mtg(mtg(1).current).det_name = 'ABCDEFGHIJKLMNOPQRSTUVWXYZxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    mtg(mtg(1).current).det_name = 'ABCDEFGHIJKLMNOPQRSTUVWXYZxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 end
 mtg(mtg(1).current).det_name(mtg(mtg(1).current).n_dets+1:end) = [];
 
