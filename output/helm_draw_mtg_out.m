@@ -31,6 +31,8 @@ if strcmp(mtg(mtg(1).current).schem_clr, 'CNL') == 1 || strcmp(mtg(mtg(1).curren
     mtg(mtg(1).current).det_name = 'mnopABCDEFGHefghabcdijklxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';    % detector labels
 elseif strcmp(mtg(mtg(1).current).schem_clr,'DOIL') == 1
     mtg(mtg(1).current).det_name = 'EFGHefghmnopijklabcdABCDxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';    % detector labels
+elseif strcmp(mtg(1).schem_clr,'APPLAB') == 1
+    mtg(mtg(1).current).det_name = 'ABCDEFGHIJKLMNOPQRSTUVWXYZxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 end
 mtg(mtg(1).current).det_name(mtg(mtg(1).current).n_dets+1:end) = [];
 
@@ -99,12 +101,14 @@ end
 
 if mtg(mtg(1).current).n_wvls == 1
     
-    if strcmp(mtg(mtg(1).current).schem_clr,'CNL') == 1
+    if strcmp(mtg(mtg(1).current).schem_clr,'CNL') == 1 
         mtg(mtg(1).current).bank_clrs = [.5 .2 .5;  1 .6 .8; .5 .37 0;  .82 .82 .82;  1 0 0; 0 1 0; 0 0 1; .8 .2 .2] ;   %the different colours, green,blue,pink,purple
     elseif strcmp(mtg(mtg(1).current).schem_clr,'DOIL') == 1
         mtg(mtg(1).current).bank_clrs = [ .5 .37 0;  1 .6 .8; .82 .82 .82; .5 .2 .5; 1 0 0; 0 1 0; 0 0 1; .8 .2 .2] ;  %the different colours, purple, grey, pink, brown
     elseif strcmp(mtg(mtg(1).current).schem_clr,'Custom') == 1 && mtg(mtg(1).current).bank_choose == 0
         mtg(mtg(1).current).bank_clrs = ones(4,3) * .9; %make everything grey until the schematic maker
+    elseif strcmp(mtg(mtg(1).current).schem_clr,'APPLAB') == 1
+        mtg(mtg(1).current).bank_clrs = [1 0 0;  0 1 0; 0 0 1;  .5 .5 0;  .5 0 0; 0 .5 0; 0 0 .5; .8 .2 .2] ;  %
     end
     
 elseif mtg(mtg(1).current).n_wvls == 2
@@ -115,6 +119,8 @@ elseif mtg(mtg(1).current).n_wvls == 2
         mtg(mtg(1).current).bank_clrs = [ .5 .37 0; .82 .82 .82; .5 .2 .5; 0 1 0] ;  %the different colours, purple, grey, pink, brown
     elseif strcmp(mtg(mtg(1).current).schem_clr,'Custom') == 1 && mtg(mtg(1).current).bank_choose == 0
         mtg(mtg(1).current).bank_clrs = ones(4,3) * .9; %make everything grey until the schematic maker
+    elseif strcmp(mtg(mtg(1).current).schem_clr,'APPLAB') == 1
+         mtg(mtg(1).current).bank_clrs = [1 0 0;  0 1 0; 0 0 1;  .5 .5 0] ;  %
     end
     
 end
