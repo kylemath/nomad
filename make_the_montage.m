@@ -25,9 +25,6 @@ for i_mtg = 1:mtg(1).n_mtgs
     % display the schematic
     [ph plot_i plot_handle]=    helm_draw_sch;
     helm.plot_handle = plot_handle;
-    plot_handle
-    plot_handle(end-1)
-    plot_handle(end)
     subplot(1,2,1); title(['Place the ' num2str(mtg(i_mtg).n_dets) ' Detectors.'],'fontsize',12)
     
     %% initialized and reset everything
