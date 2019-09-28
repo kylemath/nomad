@@ -221,6 +221,9 @@ global mtg
 % Doil2: 16 detectors, color-coded brown
 %
 
+% APPLAB: 15 Detectors, Color-coded grey
+
+
 
 %get the path
 [mtg(1).file_gdf mtg(1).path_gdf] = uiputfile('Folder','Select folder to save .gdf files');
