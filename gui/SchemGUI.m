@@ -65,7 +65,6 @@ handles.output = hObject;
 global mtg helm
 
 
-
 %design the schematic
 helmet_schem_maker
 
@@ -73,6 +72,7 @@ axes(handles.axes3)
 axis off;
 title('');
 cla
+
 
 %pick the locations
 make_the_montage;

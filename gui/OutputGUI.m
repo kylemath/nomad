@@ -156,16 +156,27 @@ for i_mtg =1:mtg(1).n_mtgs
     contents = str2double(get(handles.ModFList,'String'));
     mtg(i_mtg).mdf = contents(get(handles.ModFList,'Value')); %
 
-    oxy2_dets = find(mtg(i_mtg).det_name(1:mtg(i_mtg).n_dets) < 'a');  %find all the oxy2
-    oxy3_dets = find(mtg(i_mtg).det_name(1:mtg(i_mtg).n_dets) >= 'a'); %the others are opt3
-    mtg(i_mtg).n_det2 = length(oxy2_dets);
-    mtg(i_mtg).n_det3 = length(oxy3_dets);  %every third detector is from oxy 2 in the CNL upstairs
 
-    if mtg(i_mtg).n_det2 * mtg(i_mtg).n_det3 == 0    %check if there are more than one oxyplex needed
+    if strcmp(mtg(1).schem_clr,'DOIL') == 1 || strcmp(mtg(1).schem_clr,'CNL') == 1
+
+        oxy2_dets = find(mtg(i_mtg).det_name(1:mtg(i_mtg).n_dets) < 'a');  %find all the oxy2
+        oxy3_dets = find(mtg(i_mtg).det_name(1:mtg(i_mtg).n_dets) >= 'a'); %the others are opt3
+        mtg(i_mtg).n_det2 = length(oxy2_dets);
+        mtg(i_mtg).n_det3 = length(oxy3_dets);  %every third detector is from oxy 2 in the CNL upstairs
+
+        if mtg(i_mtg).n_det2 * mtg(i_mtg).n_det3 == 0    %check if there are more than one oxyplex needed
+            mtg(i_mtg).n_oxy = 1;
+        else
+            mtg(i_mtg).n_oxy = 2;
+        end
+    
+    elseif strcmp(mtg(1).schem_clr,'APPLAB') == 1
+
+        oxy2_dets = find(mtg(i_mtg).det_name(1:mtg(i_mtg).n_dets) < 'a'); % all letters are capitals
+        mtg(i_mtg).n_det2 = length(oxy2_dets);
         mtg(i_mtg).n_oxy = 1;
-    else
-        mtg(i_mtg).n_oxy = 2;
     end
+
 end
 
 
@@ -252,7 +263,13 @@ oxy2_dets = oxy2_dets(i_sort);
 [a i_sort] = sort(mtg(1).det_name(oxy3_dets));
 oxy3_dets = oxy3_dets(i_sort);
 
+if mtg(i_mtg).n_det2 * mtg(i_mtg).n_det3 == 0    %check if there are more than one oxyplex needed
+    mtg(i_mtg).n_oxy = 1;
+else
+    mtg(i_mtg).n_oxy = 2;
+end
 
+imagent_name = mtg(1).schem_clr;
 
 for i_mtg = 1:mtg(1).n_mtgs
     
@@ -268,18 +285,18 @@ for i_mtg = 1:mtg(1).n_mtgs
     mtg(i_mtg).dist3 = mtg(i_mtg).dist(oxy3_dets,:);
 
 
-    path = [mtg(1).path_gdf mtg(i_mtg).helmet_type filesep 'DOIL1' filesep 'Sesh' char(64+i_mtg) filesep];
+    path = [mtg(1).path_gdf mtg(i_mtg).helmet_type filesep imagent_name '1' filesep 'Sesh' char(64+i_mtg) filesep];
     if ~exist(path)
         mkdir(path)
     end
-    GDFTextFileGenerator_KM(mtg(i_mtg).dist2,[mtg(i_mtg).helmet_type '_Sesh' char(64+i_mtg) '_DOIL1'],path,i_mtg);
+    GDFTextFileGenerator_KM(mtg(i_mtg).dist2,[mtg(i_mtg).helmet_type '_Sesh' char(64+i_mtg) '_' imagent_name '1'],path,i_mtg);
     mtg(i_mtg).colorCodes2 = mtg(i_mtg).colorCodes;
 
-    path = [mtg(1).path_gdf mtg(i_mtg).helmet_type filesep 'DOIL2' filesep 'Sesh' char(64+i_mtg) filesep];
+    path = [mtg(1).path_gdf mtg(i_mtg).helmet_type filesep imagent_name '2' filesep 'Sesh' char(64+i_mtg) filesep];
     if ~exist(path)
         mkdir(path)
     end
-    GDFTextFileGenerator_KM(mtg(i_mtg).dist3,[mtg(i_mtg).helmet_type '_Sesh' char(64+i_mtg) '_DOIL2'],path,i_mtg);   
+    GDFTextFileGenerator_KM(mtg(i_mtg).dist3,[mtg(i_mtg).helmet_type '_Sesh' char(64+i_mtg) '_' imagent_name '2'],path,i_mtg);   
     mtg(i_mtg).colorCodes3 = mtg(i_mtg).colorCodes;
 
 end
@@ -298,7 +315,7 @@ for i_mtg = 1:mtg(1).n_mtgs
     
     if mtg(i_mtg).n_det3 > 0
         
-        subplot(3,3,[1+(i_mtg-1) 4+(i_mtg-1)]); image(mtg(i_mtg).dist3); colormap(cm); axis equal; ylabel('DOIL2'); xlabel('Mux Number'); title(['Session ' char(64+i_mtg)]); axis tight;
+        subplot(3,3,[1+(i_mtg-1) 4+(i_mtg-1)]); image(mtg(i_mtg).dist3); colormap(cm); axis equal; ylabel([imagent_name '2']); xlabel('Mux Number'); title(['Session ' char(64+i_mtg)]); axis tight;
         hold on
         for i_det = 1:mtg(i_mtg).n_det3
             for i_mux = 1:mtg(i_mtg).n_muxs
@@ -335,7 +352,7 @@ for i_mtg = 1:mtg(1).n_mtgs
     end
     if mtg(i_mtg).n_det2 >0
         
-        subplot(3,3,7+(i_mtg-1)); image(mtg(i_mtg).dist2); colormap(cm); axis equal;  xlabel('Mux Number'); ylabel('DOIL1'); title(['Session ' char(64+i_mtg)]); axis tight;
+        subplot(3,3,7+(i_mtg-1)); image(mtg(i_mtg).dist2); colormap(cm); axis equal;  xlabel('Mux Number'); ylabel([imagent_name '1']); title(['Session ' char(64+i_mtg)]); axis tight;
         hold on
         for i_det = 1:mtg(i_mtg).n_det2
             for i_mux = 1:mtg(i_mtg).n_muxs
