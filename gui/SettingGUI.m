@@ -447,8 +447,8 @@ for i_mtg = 1:mtg(1).n_mtgs  %loop through montages and set up the structure
         
         
     mtg(i_mtg).auto_srcs = get(handles.AutoSrcs,'Value');  %returns toggle state of AutoSrcs %move to SchemGUI as button
-    helm.det_space = 10;
-    helm.src_space = 20;
+    helm.det_space = 4;
+    helm.src_space = 10;
     
     
 end

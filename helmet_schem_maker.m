@@ -31,6 +31,10 @@ switch mtg(1).helmet_type
         helmet_type = 'custom';     % calling the custom order of rows
         % set these rows in helmet_schem_maker
         
+    case{'APPLAB_GreenPilot'}
+        helmet = 'APPLAB_greenpilot';
+        helmet_type = 'applabpilot';
+
     case {'Max'}
         helmet = 'doil_max_ave';
         helmet_type = 'foam+';    
@@ -74,6 +78,8 @@ elseif strcmp(helmet_type, 'foam') == 1
     helm.type='SSDSSDDSSDDSSDDSSDDSSDSS';
 elseif strcmp(helmet_type, 'foam+') == 1
     helm.type='DSSDDSSDDSSDDSSDDSSDDSSDDSSD';
+elseif strcmp(helmet_type, 'applabpilot') == 1
+    helm.type='SSDDSSDDSSDDSSDDSSDDSSDDSS';
 end
 
 
