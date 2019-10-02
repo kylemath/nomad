@@ -1,0 +1,29 @@
+[X,Y] = meshgrid(4:1:7,1:1:8)
+
+
+X = X(:) + .5*rand(length(X(:)),1);
+
+Y = Y(:) + .5*rand(length(X(:)),1);
+
+figure; scatter(X,Y)
+
+Z = [X,Y]; 
+
+%%
+k = 8;
+opts = statset('Display','final');
+[idx,C] = kmeans(Z,k,'Distance','sqeuclidean',...
+    'Replicates',5,'Options',opts);
+
+
+%%
+figure;
+styles = {'b.','g.','r.','c.','m.','m+','b+','g+'};
+for i_cluster = 1:k
+    plot(Z(idx==i_cluster,1),Z(idx==i_cluster,2),styles{i_cluster},'MarkerSize',12)
+    hold on
+end
+plot(C(:,1),C(:,2),'kx',...
+     'MarkerSize',15,'LineWidth',3) 
+title 'Cluster Assignments and Centroids'
+hold off
