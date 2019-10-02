@@ -42,13 +42,11 @@
 clear all
 close all
 clc
-addpath(genpath('matgraph'));
+addpath(genpath('utils'));
 addpath(genpath('elp'));
 addpath(genpath('examples'));
-addpath(genpath('colourers'));
-addpath(genpath('plotting'));
-addpath(genpath('output'));
 addpath(genpath('gui'));
+
 
 
 global mtg helm

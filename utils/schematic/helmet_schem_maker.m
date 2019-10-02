@@ -241,8 +241,7 @@ for i_row = [helm.n_rows/2:-1:1 helm.n_rows/2+1:helm.n_rows]
     end
 end
 
-
-%Transform by adding a fraction of the z dim to both the x and y dims
+%find individual distances between each location and each other location for later
 helm.all_dist = zeros(helm.n_locs);
 for i_src1 = 1:helm.n_locs
     for i_src2 = 1:helm.n_locs
@@ -250,6 +249,7 @@ for i_src1 = 1:helm.n_locs
     end
 end
 
+%Transform by adding a fraction of the z dim to both the x and y dims
 % helm.sensor_xy = mdscale(helm.all_dist,2);
 % helm.sensor_xy = [helm.sensor_xy(:,2),helm.sensor_xy(:,1)];
 helm.sensor_xy = helm.sensor_xyz(:,1:2);

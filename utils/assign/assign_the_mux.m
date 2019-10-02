@@ -54,10 +54,6 @@ elseif strcmp(mtg(mtg(1).current).mux_assign_type,'Monte Carlo') == 1 && mtg(1).
         mtg(mtg(1).current).solution_test{i_det} = mtg(mtg(1).current).mux_numbers(mtg(mtg(1).current).close_dets(:,i_det) == 1);
     end
     
-elseif strcmp(mtg(mtg(1).current).mux_assign_type,'Gavin') == 1
-
-    %enter
-    
     
 elseif strcmp(mtg(mtg(1).current).mux_assign_type,'Monte Carlo Src') == 1
         

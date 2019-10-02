@@ -27,6 +27,9 @@ global helm mtg
 % Doil1: 8 detectors, color-coded grey (doil1 is the trigger)
 % Doil2: 16 detectors, color-coded brown
 
+%APPLAB 
+% APPLAB1: 15 detectors - grey
+
 if strcmp(mtg(1).schem_clr, 'CNL') == 1 || strcmp(mtg(mtg(1).current).schem_clr, 'Custom') %The trigger machine has capitols
     mtg(mtg(1).current).det_name = 'mnopABCDEFGHefghabcdijklxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';    % detector labels
 elseif strcmp(mtg(1).schem_clr,'DOIL') == 1
