@@ -1,9 +1,7 @@
 [X,Y] = meshgrid(4:1:7,1:1:8)
 
-
-X = X(:) + .5*rand(length(X(:)),1);
-
-Y = Y(:) + .5*rand(length(X(:)),1);
+X = X(:) + .4*rand(length(X(:)),1);
+Y = Y(:) + .4*rand(length(X(:)),1);
 
 figure; scatter(X,Y)
 
@@ -27,3 +25,11 @@ plot(C(:,1),C(:,2),'kx',...
      'MarkerSize',15,'LineWidth',3) 
 title 'Cluster Assignments and Centroids'
 hold off
+
+
+%%
+%try with kory's equal groups
+
+labels = cluster_equal_groups(Z, 4)
+figure;
+gscatter(Z(:,1),Z(:,2),labels);
