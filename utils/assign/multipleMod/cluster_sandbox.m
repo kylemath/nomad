@@ -30,6 +30,14 @@ hold off
 %%
 %try with kory's equal groups
 
-labels = cluster_equal_groups(Z, 4)
+labels = cluster_equal_groups(Z, 8, 4);
 figure;
 gscatter(Z(:,1),Z(:,2),labels);
+
+
+for i=1:8 
+	members(i) = length(find(labels==i));
+end
+
+members
+
