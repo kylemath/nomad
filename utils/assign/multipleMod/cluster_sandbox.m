@@ -27,17 +27,22 @@ title 'Cluster Assignments and Centroids'
 hold off
 
 
-%%
-%try with kory's equal groups
 
-labels = cluster_equal_groups(Z, 8, 4);
+labels = equal_group_kmeans(Z, 8, 100);
 figure;
 gscatter(Z(:,1),Z(:,2),labels);
 
+%%
+%try with kory's equal groups
 
-for i=1:8 
-	members(i) = length(find(labels==i));
-end
+% labels = cluster_equal_groups(Z, 8, 4);
+% figure;
+% gscatter(Z(:,1),Z(:,2),labels);
 
-members
+
+% for i=1:8 
+% 	members(i) = length(find(labels==i));
+% end
+
+% members
 
