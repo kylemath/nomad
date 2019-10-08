@@ -2,14 +2,14 @@ clear;
 close all;
 
 [X_tmp, Y_tmp] = meshgrid(4:1:7, 1:1:8);
-X_tmp = X_tmp(:) + .2*rand(length(X_tmp(:)), 1);
-Y_tmp = Y_tmp(:) + .2*rand(length(X_tmp(:)), 1);
+X_tmp = X_tmp(:) + .4*rand(length(X_tmp(:)), 1);
+Y_tmp = Y_tmp(:) + .4*rand(length(X_tmp(:)), 1);
 X = [X_tmp, Y_tmp];
 
 % display(data);
 
-n_groups = 2;
-max_iter = 20;
+n_groups = 8;
+max_iter = 100;
   
 % Precalculate n_samples
 data_size = uint8(size(X));
@@ -28,7 +28,7 @@ mindist = inf * ones(n_samples, 1);
 
 % init placehold retrun values
 best_labels = [];
-best_inertia = -1; 
+best_inertia = []; 
 best_centers = [];
 
 % iterate
@@ -81,7 +81,7 @@ for i_iter = 1:max_iter
     point_dist = sorted_vals(1);
 
     if ~((length(find(labels == cluster_id)) >= ... 
-        idivide(n_samples, n_groups, 'floor')) && ... 
+        idivide(n_samples, n_groups, 'floor')) & ... 
         (point_cluster ~= cluster_id))
           % assign this point to the given group and update min distance
           [labels(point_id), mindist(point_id)] = deal(cluster_id, point_dist);
@@ -129,44 +129,27 @@ for i_iter = 1:max_iter
   for group_id = 1:n_groups
     centers(group_id, :) = mean(X(find(best_labels == group_id, 1), :), 1);
   end
-  
-  fprintf('%.7f\n', round(inertia,2));
 
   % UPDATE THE RETURN VALUES
-  if (best_inertia < 0) || (inertia < best_inertia)
+  if best_inertia < 0 | inertia < best_inertia
     best_labels = labels;
     best_centers = centers;
     best_inertia = inertia;
   end
 end
 
-% Attempting with the equal size groups
+% test group sizes
 best_group_sizes = zeros(n_groups, 1);
 for group_id = 1:n_groups
   best_group_sizes(group_id) = length(find(best_labels == group_id));
 end
-fprintf('Equal group counts: ');
-fprintf(regexprep(mat2str(best_group_sizes), {'\[', '\]', '\s+'}, {'', '', ','}));
-fprintf('\n');
+disp(best_group_sizes);
 
-% Attempting with k-means
 kmeans_idx = kmeans(X, n_groups);
+
 kmeans_idx_counts = zeros(n_groups, 1);
 for group_id = 1:n_groups
   kmeans_idx_counts(group_id) = length(find(kmeans_idx == group_id));
 end
-fprintf('kmeans group counts: ');
-% fprintf('%d', kmeans_idx_counts);
-fprintf(regexprep(mat2str(kmeans_idx_counts), {'\[', '\]', '\s+'}, {'', '', ','}));
-fprintf('\n');
 
-figure;
-hold on;
-dotsize = 100;
-data = X;
-
-subplot(211);
-scatter(data(:,1), data(:,2), dotsize, best_labels, 'filled');
-
-subplot(212);
-scatter(data(:,1), data(:,2), dotsize, kmeans_idx, 'filled');
+disp(kmeans_idx_cup
