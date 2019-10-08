@@ -1,19 +1,18 @@
-clear all; close all;
+clear; 
+close all;
 
 [X_tmp, Y_tmp] = meshgrid(4:1:7, 1:1:8);
 X_tmp = X_tmp(:) + .4*rand(length(X_tmp(:)), 1);
 Y_tmp = Y_tmp(:) + .4*rand(length(X_tmp(:)), 1);
 X = [X_tmp, Y_tmp];
 
-# display(data);
+% display(data);
 
 n_groups = 8;
 max_iter = 100;
-
-### FUNCTION WOULD BE DEFINED UNDERNEATH
   
-# Precalculate n_samples
-n_samples = size(X)(1);
+% Precalculate n_samples
+n_samples = uint8(length(X));
 
 % init cluster centers based on random sampling of points
 sample_ids = randperm(n_samples, n_groups);
@@ -58,7 +57,7 @@ for i_iter = 1:max_iter
       % if the group is not yet 'full', use explicit floor division
       if ~(length(find(labels == cluster_id)) >= idivide(n_samples, n_groups, 'floor'))
 
-        # assign this point to the given group and update min distance
+        % assign this point to the given group and update min distance
         [labels(point_id), mindist(point_id)] = deal(cluster_id, point_dist);
         break
       end
@@ -83,7 +82,7 @@ for i_iter = 1:max_iter
     if ~((length(find(labels == cluster_id)) >= ... 
         idivide(n_samples, n_groups, 'floor')) & ... 
         (point_cluster ~= cluster_id))
-          # assign this point to the given group and update min distance
+          % assign this point to the given group and update min distance
           [labels(point_id), mindist(point_id)] = deal(cluster_id, point_dist);
           [best_labels, best_mindist] = deal(labels, mindist);
       continue
@@ -112,10 +111,10 @@ for i_iter = 1:max_iter
           else
             %reset since the transfer was not a success
             [labels, mindist] = deal(best_labels, best_mindist);
-          endif
-        endif
-      endif
-    endfor
+          end
+        end
+      end
+    end
 
     % Append point to end of transfer list
     transfer_list = [transfer_list, point_id];
@@ -128,20 +127,20 @@ for i_iter = 1:max_iter
   % Recalculate centers
   for group_id = 1:n_groups
     centers(group_id, :) = mean(X(find(best_labels == group_id, 1), :), 1);
-  endfor
+  end
 
   % UPDATE THE RETURN VALUES
   if best_inertia < 0 | inertia < best_inertia
     best_labels = labels;
     best_centers = centers;
     best_inertia = inertia;
-  endif
+  end
 end
 
-# test group sizes
+% test group sizes
 best_group_sizes = zeros(n_groups, 1);
 for group_id = 1:n_groups
   best_group_sizes(group_id) = length(find(best_labels == group_id));
-endfor
+end
 
-best_group_sizes
+display(best_group_sizes);
