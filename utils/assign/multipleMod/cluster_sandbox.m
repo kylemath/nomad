@@ -1,6 +1,6 @@
 [X,Y] = meshgrid(4:1:7,1:1:8)
 
-X = X(:) + .4*rand(length(X(:)),1);
+X = X(:) + .9*rand(length(X(:)),1);
 Y = Y(:) + .4*rand(length(X(:)),1);
 
 figure; scatter(X,Y)
@@ -12,7 +12,6 @@ k = 8;
 opts = statset('Display','final');
 [idx,C] = kmeans(Z,k,'Distance','sqeuclidean',...
     'Replicates',5,'Options',opts);
-
 
 %%
 figure;
@@ -28,7 +27,7 @@ hold off
 
 
 
-labels = equal_group_kmeans(Z, 8, 100);
+labels = equal_group_kmeans(Z, 8, 1000);
 figure;
 gscatter(Z(:,1),Z(:,2),labels);
 
