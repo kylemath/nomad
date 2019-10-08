@@ -1,145 +1,147 @@
-%function [best_labels, best_centers, best_intertia, best_group_sizes, i_iter] = equal_group_kmeans(X, n_groups, max_iter)
-ccc
-[X,Y] = meshgrid(4:1:7,1:1:8)
-X = X(:) + .4*rand(length(X(:)),1);
-Y = Y(:) + .4*rand(length(X(:)),1);
-X = [X,Y]; 
+clear all; close all;
+
+[X_tmp, Y_tmp] = meshgrid(4:1:7, 1:1:8);
+X_tmp = X_tmp(:) + .4*rand(length(X_tmp(:)), 1);
+Y_tmp = Y_tmp(:) + .4*rand(length(X_tmp(:)), 1);
+X = [X_tmp, Y_tmp];
+
+# display(data);
 
 n_groups = 8;
 max_iter = 100;
 
-n_samples = length(X);
+### FUNCTION WOULD BE DEFINED UNDERNEATH
+  
+# Precalculate n_samples
+n_samples = size(X)(1);
 
 % init cluster centers based on random sampling of points
-centers = X(randperm(n_samples,n_groups),:);
+sample_ids = randperm(n_samples, n_groups);
+centers = X(sample_ids, :);
 
 % init distance storgare
 distances = zeros(n_samples);
 
 % init class label array and minimum distance array
 labels = -1 * ones(n_samples, 1);
-mindist = inf * ones(n_samples, 1); 
+mindist = inf * ones(n_samples, 1);
 
 % init placehold retrun values
 best_labels = [];
-best_inertia = -1; 
+best_inertia = []; 
 best_centers = [];
 
 % iterate
 for i_iter = 1:max_iter
-	
-	% store the old cluter centroids
-	centers_old = centers;
+  % store the old cluter centroids
+  centers_old = centers;
 
-	% calculate euclidian distances between points/centers pairs
-	all_distances = sum(centers * centers', 2) - 2 * (centers * X') + sum(X * X', 2)';
+  % calculate Euclidean distances between all point/center pairs
+  % https://uk.mathworks.com/help/stats/pdist2.html
+  all_distances = pdist2(centers, X, 'euclidean');
 
-	for point_id = 1:n_samples
+  for point_id = 1:n_samples
+    % printf('poind_id %d \n', point_id);
+    
+    % sort the points by distance
+    [sorted_distances, sorted_point_ids] = sort(all_distances(:, point_id));
 
-		%sort the points by distance
-		[sorted_vals, sort_idx] = sort(all_distances(:,point_id));
+    % initial assignment of labels
+    % and calculation of minimum distance from points to centers
+    
+    % for each cluster in the sorted_point_ids
+    for cluster_id = sorted_point_ids'
+      
+      % fallback point_distance is the distance to that cluster
+      point_dist = sorted_distances(cluster_id);
+      
+      % if the group is not yet 'full', use explicit floor division
+      if ~(length(find(labels == cluster_id)) >= idivide(n_samples, n_groups, 'floor'))
 
-		% initial assignmen tof labels and mindist	
-		for cluster_id = sort_idx'
-			point_dist = sorted_vals(cluster_id);
-			if ~(length(find(labels==cluster_id)) >= n_samples/n_groups)
-				labels(point_id) = cluster_id;
-				midist(point_id) = point_dist;
-				break
-			end
-		end
-	end
+        # assign this point to the given group and update min distance
+        [labels(point_id), mindist(point_id)] = deal(cluster_id, point_dist);
+        break
+      end
+    end
+  end
 
-	% refine clustering
-	transfer_list = [];
-	best_mindist = mindist;
-	best_lables = labels;
+  % refine clustering
+  transfer_list = [];
+  best_mindist = mindist;
+  best_labels = labels;
 
-	% iter through points by distance (highest to lowest)
-	[dum, isort] = sort(mindist);
-	for point_id = isort(end:-1:1)'
-		point_id
-		point_cluster = labels(point_id);
+  % iter through points by distance (highest to lowest)
+  [dum, isort] = sort(mindist);
+  for point_id = isort(end:-1:1)'
+    point_cluster = labels(point_id);
 
-		%see if there is an opening on the best cluster for this point
-		[sorted_vals, sort_idx] = sort(all_distances(:,point_id));
-		cluster_id = sort_idx(1);
-		point_dist = sorted_vals(1);
+    %see if there is an opening on the best cluster for this point
+    [sorted_vals, sort_idx] = sort(all_distances(:, point_id));
+    cluster_id = sort_idx(1);
+    point_dist = sorted_vals(1);
 
-		if ~((length(find(labels==cluster_id)) >= n_samples/n_groups) & (point_cluster ~= cluster_id))
-			labels(point_id) = cluster_id;
-			mindist(point_id) = point_dist;
-			best_labels = labels;
-			best_mindist = mindist;
-			continue
-		end
+    if ~((length(find(labels == cluster_id)) >= ... 
+        idivide(n_samples, n_groups, 'floor')) & ... 
+        (point_cluster ~= cluster_id))
+          # assign this point to the given group and update min distance
+          [labels(point_id), mindist(point_id)] = deal(cluster_id, point_dist);
+          [best_labels, best_mindist] = deal(labels, mindist);
+      continue
+    end
 
-		% iter through candidates in the transfer list			
-		for swap_candidate_id = transfer_list
-			if point_cluster ~= labels(swap_candidate_id)
-				%get the current distance of swap candidate
-				cand_distance = mindist(swap_candidate_id);
+    % iter through candidates in the transfer list			
+    for swap_candidate_id = transfer_list
+      if point_cluster ~= labels(swap_candidate_id)
+        % get the current distance of swap candidate
+        cand_distance = mindist(swap_candidate_id);
 
-				%get the potential distance of point
-				point_distance = all_distances(labels(swap_candidate_id), point_id);
+        % get the potential distance of point
+        point_distance = all_distances(labels(swap_candidate_id), point_id);
 
-				%proceed if transfer will improve distance
-				if point_distance < cand_distance
-					labels(point_id) = labels(swap_candidate_id);
-					mindists(point_id) = all_distances(labels(swap_candidate_id), point_id);
-					labels(swap_candidate_id) = point_cluster;
-					mindist(swap_candidate_id) = all_distances(point_cluster, swap_candidate_id);
+        %proceed if transfer will improve distance
+        if point_distance < cand_distance
+          labels(point_id) = labels(swap_candidate_id);
+          mindists(point_id) = all_distances(labels(swap_candidate_id), point_id);
+          labels(swap_candidate_id) = point_cluster;
+          mindist(swap_candidate_id) = all_distances(point_cluster, swap_candidate_id);
 
-					if sum(abs(mindist)) < sum(abs(best_mindist))
-						fprintf('transfer success')
-						%update the labels since the transfer was a success
-						best_labels = labels;
-						best_mindist = mindist;
-						break
-					else
-						fprintf('transfer unscucessful')
-						%reset since the transfer was not a success
-						labels
-						best_labels
-						labels = best_labels;
-						mindist = best_mindist;
-					end
-				end
-			end						
-		end
+          if sum(abs(mindist)) < sum(abs(best_mindist))
+            %update the labels since the transfer was a success
+            [best_labels, best_mindist] = deal(labels, mindist);
+            break
+          else
+            %reset since the transfer was not a success
+            [labels, mindist] = deal(best_labels, best_mindist);
+          endif
+        endif
+      endif
+    endfor
 
-		% add point to transfer list
-		transfer_list = [transfer_list, point_id]
-	end
+    % Append point to end of transfer list
+    transfer_list = [transfer_list, point_id];
+  end
 
-	% calculate final inertia
-	inertia = sum(best_mindist);
-	labels = best_labels;
+  % Calculate final inertia, and update labels using best_labels
+  inertia = sum(best_mindist);
+  labels = best_labels;
 
-	% recalculate centers
-	for group_id = 1:n_groups
-		best_labels %SIZE [] 
-		group_id
-		centers(group_id,:) = mean(X(find(best_labels == group_id,1)),1);
-	end
+  % Recalculate centers
+  for group_id = 1:n_groups
+    centers(group_id, :) = mean(X(find(best_labels == group_id, 1), :), 1);
+  endfor
 
-	% update return values
-	if best_inertia < 0 | inertia < best_inertia
-		best_labels = labels;
-		best_centers = centers;
-		best_inertia = inertia;
-	end
-
+  % UPDATE THE RETURN VALUES
+  if best_inertia < 0 | inertia < best_inertia
+    best_labels = labels;
+    best_centers = centers;
+    best_inertia = inertia;
+  endif
 end
 
-% test group sizes and 
-best_group_sizes = zeros(n_groups,1);
-for group_id = 1:n_groups 
-	best_group_sizes(group_id) = length(find(best_labels==group_id));
-end
+# test group sizes
+best_group_sizes = zeros(n_groups, 1);
+for group_id = 1:n_groups
+  best_group_sizes(group_id) = length(find(best_labels == group_id));
+endfor
+
 best_group_sizes
-
-	
-%end
-
-
