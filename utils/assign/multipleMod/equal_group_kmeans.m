@@ -12,7 +12,8 @@ n_groups = 8;
 max_iter = 100;
   
 % Precalculate n_samples
-n_samples = uint8(length(X));
+data_size = uint8(size(X));
+n_samples = data_size(1);
 
 % init cluster centers based on random sampling of points
 sample_ids = randperm(n_samples, n_groups);
