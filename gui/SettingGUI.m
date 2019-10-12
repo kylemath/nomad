@@ -22,7 +22,7 @@ function varargout = SettingGUI(varargin)
 
 % Edit the above text to modify the response to help SettingGUI
 
-% Last Modified by GUIDE v2.5 10-Nov-2012 16:17:55
+% Last Modified by GUIDE v2.5 11-Oct-2019 22:08:47
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -447,6 +447,8 @@ for i_mtg = 1:mtg(1).n_mtgs  %loop through montages and set up the structure
         
         
     mtg(i_mtg).auto_srcs = get(handles.AutoSrcs,'Value');  %returns toggle state of AutoSrcs %move to SchemGUI as button
+    mtg(i_mtg).mod_mux = get(handles.ModMuxFlag,'Value'); %returns toggle state of modulation frequency multiplexing option for imagent 2
+    
     helm.det_space = 4;
     helm.src_space = 10;
     
@@ -475,3 +477,12 @@ function edit15_CreateFcn(hObject, eventdata, handles)
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
 end
+
+
+% --- Executes on button press in ModMuxFlag.
+function ModMuxFlag_Callback(hObject, eventdata, handles)
+% hObject    handle to ModMuxFlag (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of ModMuxFlag

@@ -269,6 +269,10 @@ function Colour_Button_Callback(hObject, eventdata, handles)
 % 
 global mtg helm
 
+%% 2019 - mtg(1).mod_mux toggle switch 
+%% TODO
+
+
 contents = str2double(get(handles.Current_montage,'String'));
 mtg(1).current = contents(get(handles.Current_montage,'Value')); 
 mtg(mtg(1).current).n_muxs = str2double(get(handles.NMuxs,'String'));
