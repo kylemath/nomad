@@ -269,27 +269,35 @@ function Colour_Button_Callback(hObject, eventdata, handles)
 % 
 global mtg helm
 
-%% 2019 - mtg(1).mod_mux toggle switch 
-%% TODO
 
-
+%select the current montage
 contents = str2double(get(handles.Current_montage,'String'));
 mtg(1).current = contents(get(handles.Current_montage,'Value')); 
+
+%get mux and bank info
 mtg(mtg(1).current).n_muxs = str2double(get(handles.NMuxs,'String'));
 mtg(mtg(1).current).n_banks = ceil(mtg(mtg(1).current).n_srcs/mtg(mtg(1).current).n_muxs);
+
+
+%change it up if using two wavelengths
 if mtg(mtg(1).current).n_wvls == 2                    %solving for two detectors is equivalent to this (Mathewson, Owens, et al., in prep);
     mtg(mtg(1).current).n_muxs = mtg(mtg(1).current).n_muxs/2;   
     mtg(mtg(1).current).n_banks = ceil((mtg(mtg(1).current).n_srcs*2)/(mtg(mtg(1).current).n_muxs*2));
 end
 
+%pull out colour scheme
 contents = cellstr(get(handles.SchemClrList,'String'));
 mtg(mtg(1).current).schem_clr = contents{get(handles.SchemClrList,'Value')}; 
-mtg(mtg(1).current).bank_choose = 0; %Flag to replace the grey with chosen colour
 
+%Flag to replace the grey with chosen colour when custom colour
+mtg(mtg(1).current).bank_choose = 0; 
+
+%pull out mux assignment type
 contents = cellstr(get(handles.MuxAssignList,'String'));
 mtg(mtg(1).current).mux_assign_type = contents{get(handles.MuxAssignList,'Value')}; 
-mtg(mtg(1).current).n_trys = str2double(get(handles.NumTry,'String'));
 
+%number of tries of monte carlo
+mtg(mtg(1).current).n_trys = str2double(get(handles.NumTry,'String'));
 
 
 %run the assignment and plot it
@@ -301,8 +309,44 @@ rotate3d off
 axes(handles.axes3) 
 title('');
 cla
+
 assign_the_mux;    % run the mux assignment
+
+
+%% 2019 - mtg(1).mod_mux toggle switch 
+%% TODO
+% tested and works alright, need to update .gdf and .mtg file outputs accordingly
+% should make the max iter and number init variables in gui
+% need to pull n_groups from settings
+
+%in case loading old dataset
+if ~isfield(mtg(mtg(1).current),'mod_mux')
+    mtg(mtg(1).current).mod_mux = 0;
+end
+
+if mtg(mtg(1).current).mod_mux
+    X = mtg(mtg(1).current).src_xyz; 
+
+    n_groups = 16;
+    max_iter = 100;
+    n_init = 100;
+
+    labels = equal_group_kmeans(X, n_groups, max_iter, n_init);
+
+    mtg(mtg(1).current).orig_mux_numbers = mtg(mtg(1).current).mux_numbers;
+    mtg(mtg(1).current).mux_numbers = labels;
+    mtg(mtg(1).current).n_muxs = 16;
+    mtg(mtg(1).current).n_banks = 2;
+
+end
+
 helm_draw_mtg; axis off;
+%switch back?
+%better idea - use the two banks to create the .gdf and .mtg file so the one is in the right place, etc.
+% when making .mtg file, find the label, etc.
+
+
+
 
 
 
