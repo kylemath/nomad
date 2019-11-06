@@ -1,6 +1,6 @@
 ## NOMAD ##
 
-![alt text](gui/nomad.jpg)
+![alt text](utils/gui/nomad.jpg)
 
 
 # Near-infrared Optical Montage Automated Design
